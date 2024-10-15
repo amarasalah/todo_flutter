@@ -107,7 +107,7 @@ class _TaskScreenState extends State<TaskScreen> {
                 children: [
                   MyTimelineTile(isFirst: true, isLast: false, isPast: true),
                   MyTimelineTile(isFirst: false, isLast: false, isPast: true),
-                  MyTimelineTile(isFirst: false, isLast: false, isPast: true)
+                  MyTimelineTile(isFirst: false, isLast: true, isPast: false)
                 ],
               )),
             ],
