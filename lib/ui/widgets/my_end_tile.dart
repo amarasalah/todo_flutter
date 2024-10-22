@@ -4,17 +4,20 @@ import 'package:flutter/material.dart';
 class MyEndTile extends StatelessWidget {
   final bool isFirst;
   const MyEndTile({
+    super.key,
     required this.isFirst,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 20),
       height: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: isFirst ? Color(0xff7F86FF) : Color.fromARGB(101, 169, 255, 254),
+        color: isFirst
+            ? const Color(0xff7F86FF)
+            : const Color.fromARGB(101, 169, 255, 254),
       ),
       width: double.infinity,
       child: Padding(
@@ -94,7 +97,7 @@ class MyEndTile extends StatelessWidget {
             ),
             isFirst
                 ? Image.asset("assets/images/1st physics.png")
-                : SizedBox(
+                : const SizedBox(
                     width: 12,
                   ),
           ],

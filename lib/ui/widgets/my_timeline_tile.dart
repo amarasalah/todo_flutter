@@ -20,13 +20,13 @@ class MyTimelineTile extends StatelessWidget {
     return TimelineTile(
       isFirst: isFirst,
       isLast: isLast,
-      beforeLineStyle: LineStyle(color: Color(0xff7F86FF)),
+      beforeLineStyle: const LineStyle(color: Color(0xff7F86FF)),
       indicatorStyle: IndicatorStyle(
-        color: isFirst ? Color(0xff7F86FF) : Colors.white,
+        color: isFirst ? const Color(0xff7F86FF) : Colors.white,
         iconStyle: IconStyle(
           iconData: Icons.trip_origin_outlined,
           fontSize: 20,
-          color: isFirst ? Colors.white : Color(0xff7F86FF),
+          color: isFirst ? Colors.white : const Color(0xff7F86FF),
         ),
       ),
       endChild: MyEndTile(isFirst: isFirst),

@@ -16,10 +16,10 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomeScreen(),
-    TaskScreen(),
-    ClassroomScreen(),
-    ChatScreen(),
+    const HomeScreen(),
+    const TaskScreen(),
+    const ClassroomScreen(),
+    const ChatScreen(),
   ];
 
   @override

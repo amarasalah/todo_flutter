@@ -59,7 +59,7 @@ class _TaskScreenState extends State<TaskScreen> {
                       ),
                       Text(
                         formattedDay(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -68,15 +68,15 @@ class _TaskScreenState extends State<TaskScreen> {
                     onPressed: () {
                       // Add task button functionality
                     },
-                    child: const Row(
-                      children: [Icon(Icons.add), Text("Add Task")],
-                    ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xff49B583),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5.0),
                       ),
+                    ),
+                    child: const Row(
+                      children: [Icon(Icons.add), Text("Add Task")],
                     ),
                   ),
                 ],
@@ -104,7 +104,7 @@ class _TaskScreenState extends State<TaskScreen> {
               // Example of displaying tasks or events for the selected date
               Expanded(
                   child: ListView(
-                children: [
+                children: const [
                   MyTimelineTile(isFirst: true, isLast: false, isPast: true),
                   MyTimelineTile(isFirst: false, isLast: false, isPast: true),
                   MyTimelineTile(isFirst: false, isLast: true, isPast: false)
